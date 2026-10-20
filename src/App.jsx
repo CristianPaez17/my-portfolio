@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 function App() {
-  const [idioma, setIdioma] = useState("es");
+  const [idioma, setIdioma] = useState("en");
 
   const textos = {
     es: {
