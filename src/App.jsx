@@ -237,8 +237,46 @@ function App() {
           <p className="texto-seccion">{t.sobreMiTexto}</p>
         </section>
 
+
+        <section className="seccion" id="cv">
+          <p className="etiqueta">02 / Resume</p>
+
+          <h2 className="titulo-seccion">
+            {idioma === "es" ? "Descarga mi CV" : "Download my CV"}
+          </h2>
+
+          <p className="texto-seccion">
+            {idioma === "es"
+              ? "Conoce mi experiencia, habilidades y proyectos. Descarga mi hoja de vida en el idioma que prefieras."
+              : "Learn more about my experience, skills, and projects. Download my resume in your preferred language."}
+          </p>
+
+          <div className="hero-botones">
+            <a
+              className="boton principal"
+              href="/cv/cv-cristian-paez-es.pdf"
+              download
+            >
+              {idioma === "es"
+                ? "Descargar CV en español ↓"
+                : "Download CV in Spanish ↓"}
+            </a>
+
+            <a
+              className="boton secundario"
+              href="/cv/cristian-paez-resume-en.pdf"
+              download
+            >
+              {idioma === "es"
+                ? "Descargar CV en inglés ↓"
+                : "Download CV in English ↓"}
+            </a>
+          </div>
+        </section>
+
+
         <section className="seccion" id="habilidades">
-          <p className="etiqueta">02 / {t.habilidades}</p>
+          <p className="etiqueta">03 / {t.habilidades}</p>
           <h2 className="titulo-seccion">{t.habilidadesTitulo}</h2>
 
           <div className="habilidades">
@@ -281,7 +319,7 @@ function App() {
         </section>
 
         <section className="seccion" id="proyectos">
-          <p className="etiqueta">03 / {t.proyectos}</p>
+          <p className="etiqueta">04 / {t.proyectos}</p>
           <h2 className="titulo-seccion">{t.proyectosTitulo}</h2>
 
           <div className="proyectos">
@@ -389,7 +427,7 @@ function App() {
         </section>
 
         <section className="seccion github">
-          <p className="etiqueta">04 / GitHub</p>
+          <p className="etiqueta">05 / GitHub</p>
           <h2 className="titulo-seccion">{t.githubTitulo}</h2>
           <p className="texto-seccion">{t.githubTexto}</p>
 
@@ -404,7 +442,7 @@ function App() {
         </section>
 
         <section className="seccion" id="contacto">
-          <p className="etiqueta">05 / {t.contacto}</p>
+          <p className="etiqueta">06 / {t.contacto}</p>
           <h2 className="titulo-seccion">{t.contactoTitulo}</h2>
           <p className="texto-seccion">{t.contactoTexto}</p>
 
